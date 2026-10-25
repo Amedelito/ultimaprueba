@@ -1,0 +1,155 @@
+# Generado por build_pack.py - cada criatura se compone de PARTES animadas por el plugin.
+# partes: modelo (custom_model_data) | rol (animacion) | pivote [x,y,z] en unidades de modelo (16 = 1 bloque)
+# roles: cuerpo, cabeza, pata_a/pata_b (diagonales), pata_s (a la vez), cola, oreja_l/r, aleta_l/r
+
+# true = tu no ves tu propio modelo. false = lo ves (en F5 / tercera persona)
+ocultar-a-si-mismo: true
+# La cabeza gira hacia donde miras (true) o queda fija (false)
+cabeza-sigue: true
+
+# Nick encima de la criatura (lo ven los demas, tu no)
+nick:
+  mostrar: true
+  ocultar-vanilla: true   # oculta el nick normal para no verlo duplicado (usa un equipo temporal)
+
+# escala: tamano del modelo | escala-jugador: tamano real del jugador (hitbox/camara)
+# velocidad: multiplicador | amplitud: grados de balanceo de patas | salta: avanza a saltitos
+# giro: grados para orientar el modelo (180 si se ve al reves) | balanceo: inclinacion lateral al andar
+criaturas:
+  nutria:
+    material: PAPER
+    modelo-mano: 0
+    escala: 1.0
+    escala-jugador: 0.48
+    nick-altura: 0.96
+    velocidad: 1.1
+    giro: 0
+    amplitud: 38
+    salta: false
+    balanceo: 0.06
+    efectos: ["dolphins_grace:0", "water_breathing:0"]
+    partes:
+      - {modelo: 2000, rol: cuerpo, pivote: [8, 4, 8]}
+      - {modelo: 2001, rol: cabeza, pivote: [8, 6, 4]}
+      - {modelo: 2002, rol: pata_a, pivote: [6.5, 3, 4.7]}
+      - {modelo: 2003, rol: pata_b, pivote: [9.5, 3, 4.7]}
+      - {modelo: 2004, rol: pata_b, pivote: [6.5, 3, 11.3]}
+      - {modelo: 2005, rol: pata_a, pivote: [9.5, 3, 11.3]}
+      - {modelo: 2006, rol: cola, pivote: [8, 4.2, 13]}
+  capibara:
+    material: PAPER
+    modelo-mano: 0
+    escala: 1.3
+    escala-jugador: 0.64
+    nick-altura: 1.21
+    velocidad: 0.9
+    giro: 0
+    amplitud: 28
+    salta: false
+    balanceo: 0.06
+    efectos: ["resistance:0"]
+    partes:
+      - {modelo: 2020, rol: cuerpo, pivote: [8, 4, 8]}
+      - {modelo: 2021, rol: cabeza, pivote: [8, 7, 4]}
+      - {modelo: 2022, rol: pata_a, pivote: [6.0, 3, 5.0]}
+      - {modelo: 2023, rol: pata_b, pivote: [10.0, 3, 5.0]}
+      - {modelo: 2024, rol: pata_b, pivote: [6.0, 3, 12.0]}
+      - {modelo: 2025, rol: pata_a, pivote: [10.0, 3, 12.0]}
+  rana:
+    material: PAPER
+    modelo-mano: 0
+    escala: 0.9
+    escala-jugador: 0.4
+    nick-altura: 0.83
+    velocidad: 1.0
+    giro: 0
+    amplitud: 50
+    salta: true
+    balanceo: 0.06
+    efectos: ["jump_boost:2", "slow_falling:0"]
+    partes:
+      - {modelo: 2040, rol: cuerpo, pivote: [8, 4, 8]}
+      - {modelo: 2041, rol: cabeza, pivote: [8, 5, 5]}
+      - {modelo: 2042, rol: pata_s, pivote: [4.75, 2.5, 5.25]}
+      - {modelo: 2043, rol: pata_s, pivote: [11.25, 2.5, 5.25]}
+      - {modelo: 2044, rol: pata_s, pivote: [4.0, 4, 11.0]}
+      - {modelo: 2045, rol: pata_s, pivote: [12.0, 4, 11.0]}
+  oso:
+    material: PAPER
+    modelo-mano: 0
+    escala: 1.8
+    escala-jugador: 1.12
+    nick-altura: 1.99
+    velocidad: 0.95
+    giro: 0
+    amplitud: 26
+    salta: false
+    balanceo: 0.06
+    efectos: ["strength:1", "resistance:1"]
+    partes:
+      - {modelo: 2060, rol: cuerpo, pivote: [8, 6, 8]}
+      - {modelo: 2061, rol: cabeza, pivote: [8, 9, 4]}
+      - {modelo: 2062, rol: pata_a, pivote: [5.5, 4, 6.0]}
+      - {modelo: 2063, rol: pata_b, pivote: [10.5, 4, 6.0]}
+      - {modelo: 2064, rol: pata_b, pivote: [5.5, 4, 12.5]}
+      - {modelo: 2065, rol: pata_a, pivote: [10.5, 4, 12.5]}
+  gato:
+    material: PAPER
+    modelo-mano: 0
+    escala: 0.9
+    escala-jugador: 0.5
+    nick-altura: 0.99
+    velocidad: 1.2
+    giro: 0
+    amplitud: 40
+    salta: false
+    balanceo: 0.06
+    efectos: ["jump_boost:1", "night_vision:0"]
+    partes:
+      - {modelo: 2080, rol: cuerpo, pivote: [8, 4, 8]}
+      - {modelo: 2081, rol: cabeza, pivote: [8, 6.5, 4]}
+      - {modelo: 2082, rol: pata_a, pivote: [6.8, 3, 5.3]}
+      - {modelo: 2083, rol: pata_b, pivote: [9.2, 3, 5.3]}
+      - {modelo: 2084, rol: pata_b, pivote: [6.8, 3, 10.8]}
+      - {modelo: 2085, rol: pata_a, pivote: [9.2, 3, 10.8]}
+      - {modelo: 2086, rol: cola, pivote: [8, 4.2, 12]}
+  conejo:
+    material: PAPER
+    modelo-mano: 0
+    escala: 0.8
+    escala-jugador: 0.58
+    nick-altura: 1.12
+    velocidad: 1.3
+    giro: 0
+    amplitud: 45
+    salta: true
+    balanceo: 0.06
+    efectos: ["jump_boost:3"]
+    partes:
+      - {modelo: 2100, rol: cuerpo, pivote: [8, 4, 8]}
+      - {modelo: 2101, rol: cabeza, pivote: [8, 7, 4]}
+      - {modelo: 2102, rol: oreja_l, pivote: [6.65, 10, 3.5]}
+      - {modelo: 2103, rol: oreja_r, pivote: [9.35, 10, 3.5]}
+      - {modelo: 2104, rol: pata_s, pivote: [6.25, 3, 5.25]}
+      - {modelo: 2105, rol: pata_s, pivote: [9.75, 3, 5.25]}
+      - {modelo: 2106, rol: pata_s, pivote: [6.5, 3.5, 11.0]}
+      - {modelo: 2107, rol: pata_s, pivote: [9.5, 3.5, 11.0]}
+  pinguino:
+    material: PAPER
+    modelo-mano: 0
+    escala: 1.1
+    escala-jugador: 0.75
+    nick-altura: 1.4
+    velocidad: 0.9
+    giro: 0
+    amplitud: 30
+    salta: false
+    balanceo: 0.13
+    efectos: ["dolphins_grace:0"]
+    partes:
+      - {modelo: 2120, rol: cuerpo, pivote: [8, 6, 8]}
+      - {modelo: 2121, rol: cabeza, pivote: [8, 12, 8]}
+      - {modelo: 2122, rol: aleta_l, pivote: [3.25, 10, 8]}
+      - {modelo: 2123, rol: aleta_r, pivote: [12.75, 10, 8]}
+      - {modelo: 2124, rol: pata_a, pivote: [6.25, 2, 6]}
+      - {modelo: 2125, rol: pata_b, pivote: [9.75, 2, 6]}

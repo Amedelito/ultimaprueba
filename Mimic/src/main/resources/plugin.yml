@@ -1,0 +1,14 @@
+name: Mimic
+version: 1.0
+main: es.mimic.Mimic
+api-version: '1.19'
+description: Transforma jugadores en criaturas custom (solo OPs)
+commands:
+  transformar:
+    description: Transforma jugadores en criaturas custom
+    usage: /transformar <yo|all|jugador|@selector> <criatura> | quitar <objetivo> | lista | recargar
+    aliases: [mimic, disfraz]
+permissions:
+  mimic.use:
+    description: Usar /transformar
+    default: op
